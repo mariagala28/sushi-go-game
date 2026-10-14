@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context=".SGMainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="1280dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".01"
+                android:text="RULES" />
+
+            <TextView
+                android:id="@+id/titleGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_weight="1"
+                android:text="Sushi Go!"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:background="#FF9E9E"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/opponent1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbarSize="4dp"
+                                android:text="Player 1"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/p1C5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p1C4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p1C3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p1C2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p1C1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:background="#8F4CAF50"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/opponent3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbarSize="4dp"
+                                android:text="Player 3"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/p3C5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p3C4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p3C3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p3C2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p3C1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:background="#FBDC8E"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/opponent2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbarSize="4dp"
+                                android:text="Player 2"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/p2C5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p2C4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p2C3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p2C2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p2C1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:background="#732196F3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/opponent4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbarSize="4dp"
+                                android:text="Player 4"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/p4C5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p4C4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p4C3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p4C2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageView
+                                    android:id="@+id/p4C1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#CBDFE6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/chooseCardPrompt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbarSize="4dp"
+                                android:text="Choose a card!"
+                                android:textAlignment="center"
+                                android:textSize="30sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/handCard1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="5"
+                                    android:scaleType="centerInside"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageButton
+                                    android:id="@+id/handCard2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="5"
+                                    android:scaleType="centerInside"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageButton
+                                    android:id="@+id/handCard3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="5"
+                                    android:scaleType="centerInside"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageButton
+                                    android:id="@+id/handCard4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="5"
+                                    android:scaleType="centerInside"
+                                    app:srcCompat="@drawable/sushicard1" />
+
+                                <ImageButton
+                                    android:id="@+id/handCard5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="5"
+                                    android:scaleType="centerInside"
+                                    app:srcCompat="@drawable/sushicard1" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/buttonChopsticks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:layout_marginTop="25dp"
+                                android:layout_weight="1"
+                                android:text="Chopsticks"
+                                android:textColorLink="#8BC34A"
+                                android:textSize="25sp" />
+
+                            <Button
+                                android:id="@+id/buttonWasabi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:layout_weight="1"
+                                android:text="Wasabi"
+                                android:textSize="25sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/buttonReady"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:layout_weight="1"
+                                android:text="Ready!"
+                                android:textSize="50sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myCards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="4dp"
+                        android:text="My Cards : Current Score"
+                        android:textAlignment="center"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="5"
+                            android:text="L"
+                            android:textSize="50dp" />
+
+                        <ImageButton
+                            android:id="@+id/myCard1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/squidnigiri" />
+
+                        <ImageButton
+                            android:id="@+id/myCard2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/sushicard1" />
+
+                        <ImageButton
+                            android:id="@+id/myCard3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/sushicard1" />
+
+                        <ImageButton
+                            android:id="@+id/myCard4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/sushicard1" />
+
+                        <ImageButton
+                            android:id="@+id/myCard5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/sushicard1" />
+
+                        <Button
+                            android:id="@+id/buttonRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="5"
+                            android:text="R"
+                            android:textSize="50dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
